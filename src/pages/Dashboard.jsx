@@ -65,7 +65,7 @@ const Dashboard = () => {
           required
         />
       </form>
-    
+
 
       {isLoading ? (
         <h2 className="mt-40 text-4xl text-center">Loading...</h2>
@@ -78,8 +78,8 @@ const Dashboard = () => {
           ))}
         </ul>
       )}
- </div>
- );
+    </div>
+  );
 };
 
 export default Dashboard;

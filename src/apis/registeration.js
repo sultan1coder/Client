@@ -11,7 +11,7 @@ const fields = [
   "gender",
 ];
 export const post = async (data) => {
-  try{
+  try {
 
     fields.forEach((field) => {
       if (!Object.getOwnPropertyNames(data).includes(field))
@@ -20,7 +20,7 @@ export const post = async (data) => {
     const response = await axios.post("https://server-hwdi.onrender.com/members", data);
     if (response.status == 200) return response.data;
   }
-  catch(err){
+  catch (err) {
     throw new Error(err);
   }
 };

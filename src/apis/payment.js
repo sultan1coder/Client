@@ -7,7 +7,7 @@ export const post = async (payment) => {
       if (!Object.getOwnPropertyNames(payment).includes(f))
         throw Error(`${f} is missing`);
     });
-    const response = await axios.post("https://server-hwdi.onrender.com/payments/"+payment.member,payment);
+    const response = await axios.post("https://server-hwdi.onrender.com/payments/" + payment.member, payment);
     if (response.data) data = response.data;
   } catch (err) {
     error = err;

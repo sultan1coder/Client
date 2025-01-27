@@ -7,7 +7,7 @@ const login = async (username, password) => {
     });
 
     const token = response.data.token;
-    if(!token) return;
+    if (!token) return;
     localStorage.setItem("authToken", token);
     console.log("login successful: ", response.data);
 
