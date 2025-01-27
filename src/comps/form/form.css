@@ -1,0 +1,20 @@
+.input{
+    @apply text-xl rounded-xl border mb-2 p-2 block w-full border-gray-300 outline-none;
+}
+.btn{
+    @apply rounded-xl border-2 text-green-500 border-green-500 text-lg py-2 px-7 block  mt-5 transition-all hover:bg-green-500 hover:text-white
+}
+.login-form{
+    @apply p-5 from-white to-gray-200 bg-gradient-to-br  rounded-xl mb-5
+}
+.btn:disabled{
+    @apply cursor-wait bg-gray-200 text-gray-400 border-gray-200
+}
+.input:disabled{
+    @apply cursor-wait text-gray-400
+}
+.disabled{
+    @apply text-gray-500 ;
+    cursor: wait;
+    
+}

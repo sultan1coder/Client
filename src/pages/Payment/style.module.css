@@ -1,0 +1,20 @@
+.container{
+    @apply flex-1 text-white h-full min-h-svh;
+    background-color:  #2c3e50;
+}
+.container > * {
+    @apply mx-5;
+}
+.header{
+    @apply p-5 bg-white text-black mx-0 text-center text-2xl font-bold;
+    border-bottom: 1px solid rgba(255, 255,255,0.3);
+
+}
+
+.main{
+    @apply flex gap-10 flex-wrap;
+}
+.card{
+    @apply p-5 h-[200px] w-[250px] text-pink-200 border border-pink-400 text-2xl rounded-xl hover:bg-pink-400 hover:text-white transition-all;
+
+}
